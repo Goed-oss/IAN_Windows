@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  background: #20212d;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.desktop {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: url('https://wallpapercave.com/wp/wp8508394.jpg') center center/cover no-repeat;
+}
+
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 48px;
+  background: rgba(40, 40, 50, 0.98);
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+}
+
+.startmenu {
+  position: fixed;
+  left: 16px;
+  bottom: 60px;
+  width: 320px;
+  background: rgba(28, 28, 40, 0.98);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+  padding: 16px;
+  z-index: 200;
+}
+
+.window {
+  position: absolute;
+  min-width: 320px;
+  min-height: 180px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  border: 1.5px solid #cfd8dc;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+  animation: popin 0.18s;
+}
+
+@keyframes popin {
+  0% { transform: scale(0.95); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.window-header {
+  background: #0078d4;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  cursor: move;
+  user-select: none;
+}
+
+.window-content {
+  background: #fafbfc;
+  height: 410px;
+  padding: 0;
+}
+
+.appicon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 12px;
+  cursor: pointer;
+  width: 64px;
+}
+
+.appicon img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.appicon span {
+  font-size: 13px;
+  color: #fff;
+  margin-top: 4px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 700px) {
+  .window {
+    min-width: 98vw;
+    min-height: 80vh;
+    left: 1vw !important;
+    top: 5vh !important;
+    width: 98vw !important;
+    height: 80vh !important;
+  }
+  .window-content {
+    height: calc(80vh - 40px);
+  }
+  .startmenu {
+    width: 96vw;
+    left: 2vw;
+  }
+}

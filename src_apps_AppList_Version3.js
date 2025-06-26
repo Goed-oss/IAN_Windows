@@ -1,0 +1,72 @@
+export const apps = [
+  {
+    id: "word",
+    name: "Word Online",
+    icon: "https://img.icons8.com/color/48/000000/ms-word.png",
+    url: "https://office.com/launch/word",
+    embed: false,
+  },
+  {
+    id: "excel",
+    name: "Excel Online",
+    icon: "https://img.icons8.com/color/48/000000/ms-excel.png",
+    url: "https://office.com/launch/excel",
+    embed: false,
+  },
+  {
+    id: "powerpoint",
+    name: "PowerPoint Online",
+    icon: "https://img.icons8.com/color/48/000000/ms-powerpoint.png",
+    url: "https://office.com/launch/powerpoint",
+    embed: false,
+  },
+  {
+    id: "outlook",
+    name: "Outlook",
+    icon: "https://img.icons8.com/color/48/000000/ms-outlook.png",
+    url: "https://outlook.live.com/",
+    embed: false,
+  },
+  {
+    id: "onenote",
+    name: "OneNote",
+    icon: "https://img.icons8.com/color/48/000000/onenote.png",
+    url: "https://www.onenote.com/notebooks",
+    embed: false,
+  },
+  {
+    id: "teams",
+    name: "Teams (Web)",
+    icon: "https://img.icons8.com/color/48/000000/microsoft-teams.png",
+    url: "https://teams.microsoft.com/",
+    embed: false,
+  },
+  {
+    id: "google-docs",
+    name: "Google Docs",
+    icon: "https://img.icons8.com/color/48/000000/google-docs.png",
+    url: "https://docs.google.com/",
+    embed: false,
+  },
+  {
+    id: "google-sheets",
+    name: "Google Sheets",
+    icon: "https://img.icons8.com/color/48/000000/google-sheets.png",
+    url: "https://sheets.google.com/",
+    embed: false,
+  },
+  {
+    id: "github",
+    name: "GitHub",
+    icon: "https://img.icons8.com/ios-filled/50/000000/github.png",
+    url: "https://github.com/",
+    embed: false,
+  },
+  {
+    id: "calendar",
+    name: "Outlook Calendar",
+    icon: "https://img.icons8.com/color/48/000000/calendar--v1.png",
+    url: "https://outlook.live.com/calendar/",
+    embed: false,
+  }
+];
